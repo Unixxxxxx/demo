@@ -1,17 +1,21 @@
 # Use the official Python image
 FROM python:3.11-slim
 
-# Set the working directory
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Set working directory in the container
 WORKDIR /app
 
-# Copy project files
-COPY requirements.txt requirements.txt
-COPY app.py app.py
+# Copy app files
+COPY requirements.txt .
+COPY app.py .
 
-# Install Python dependencies
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the port
+# Expose port
 EXPOSE 5000
 
 # Run the app
