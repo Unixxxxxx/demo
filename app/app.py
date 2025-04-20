@@ -1,12 +1,13 @@
-from flask import Flask
-import socket  # <- ADD THIS LINE
+import os
+print("Template folder:", os.path.join(os.getcwd(), "templates"))
+
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    container_id = socket.gethostname()
-    return f"Hello, {container_id}"
+def home():
+    return render_template('home.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
