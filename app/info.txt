@@ -1,0 +1,4 @@
+python app.py : run the app
+routes/: routes are inside 
+appdb.py : databases logic 
+
