@@ -1,4 +1,15 @@
-python app.py : run the app
-routes/: routes are inside 
-appdb.py : databases logic 
-
+├── __pycache__
+│   ├── appdb.cpython-310.pyc
+│   └── config.cpython-310.pyc
+├── app.py
+├── appdb.py
+├── config.py
+├── info.txt
+├── instance
+├── requirement.txt
+├── routes
+│   ├── __pycache__
+│   └── main_routes.py
+└── templates
+    ├── about.html
+    └── index.html
