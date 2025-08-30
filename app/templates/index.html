@@ -1,10 +1,49 @@
-<!DOCKTYPE html>
-<htmnl>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<tile>FlaskDB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlaskDB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 15px 0;
+            font-size: 1.5rem;
+        }
+        main {
+            padding: 40px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        a:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
-	<h1>welcome</h1>
-	<a href="{{ url_for('main.about')}}">About</a>
+    <header>
+        FlaskDB
+    </header>
+    <main>
+        <h1>Welcome</h1>
+        <a href="{{ url_for('main.about') }}">About</a>
+    </main>
 </body>
 </html>
+
